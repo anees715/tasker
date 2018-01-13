@@ -1,5 +1,11 @@
 {
   "name": "tasker",
-  "private": true,
-  "dependencies": {}
+  "private": false,
+  "dependencies": {},
+  "version": "1.0.0",
+  "description": "Realtime task management app using rails and actioncable",
+  "main": "app/views/tasks/index.html.erb",
+  "repository": "https://github.com/anees715/Tasker.git",
+  "author": "Muhammed Anees",
+  "license": "MIT"
 }
