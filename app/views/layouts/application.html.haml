@@ -1,12 +1,35 @@
 !!!
-%html
+%html{lang: "en"}
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %title Tasker
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{:href => "https://fonts.googleapis.com/css?family=Source+Sans+Pro", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Muli", :rel => "stylesheet"}
   %body
-    %p.notice= notice
-    %p.alert= alert
-    = yield
+    .main-header
+      .container-fluid
+        %h3 
+          Tasker | 
+          %span Realtime Task Manager
+        .main-right.pull-right
+          %i.icon-bell
+    =render 'layouts/shared/nav'
+    .container
+      .main-wrapper
+        = yield
+    #newUserModal.modal.fade
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %h4.modal-title Add New User
+            %button.close{"data-dismiss" => "modal", :type => "button"} ×
+          .modal-body
+            =render 'layouts/shared/new_user'
+          .modal-footer
+            %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+

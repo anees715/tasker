@@ -1,0 +1,122 @@
+body{
+	background: #fafafa;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/* Margin Classes*/
+ul, li{
+	list-style-type: none;
+}
+.m-r-10{
+	margin-right: 10px
+}
+.main-header{
+	height: 70px;
+	background: #ffffff;
+	padding: 20px 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-bottom: 1px solid #e7e7e7;
+	h3{
+		font-size: 26px;
+		color: #4b4949;
+		display: inline-block;
+		span{
+			font-size: 14px;
+		    vertical-align: middle;
+		    border-left: 1px solid #999999;
+		    padding-left: 10px;
+		    margin-left: 5px;
+		    font-family: 'Montserrat', sans-serif;
+		    color: #939393;
+		    letter-spacing: 2px;
+			}
+		}
+		.main-right{
+			padding: 6px 20px 0px 0;
+    		color: #2ea79c;
+		}
+}
+.navbar-custom{
+	background: #ffffff;
+	padding: 16px 32px;
+	font-family: 'Muli', sans-serif;
+	text-transform: uppercase;
+	box-shadow: 10px 8px 57px -27px;
+	ul li{
+		position: relative;
+		margin-right: 25px;
+		i{
+			margin-right: 10px;
+		}
+		a.nav-link{
+			color: rgba(0, 0, 0, 0.5);
+			letter-spacing: 2px;
+		}
+	}
+	ul li.active a.nav-link{
+		color: #4ca2ee !important;
+		letter-spacing: 2px;
+	}
+	ul li.active:after{
+		    font-family: 'fontawesome';
+		    content: '\f111';
+		    position: absolute;
+		    left: 52%;
+		    font-size: 8px;
+		    top: 34px;
+		    color: #7eb6ef;
+	}
+}
+.main-wrapper{
+	margin-top: 50px;
+}
+.tasks-container{
+	li{
+		border: 1px solid #efefef;
+	    padding: 15px 20px;
+	    background: #ffffff;
+	    box-shadow: 0 1px 4px -2px;
+	    .assigned-to{
+	    	font-size: 14px;
+	    	border-top: 1px solid #efefef;
+		    padding-top: 8px;
+		    margin-top: 20px;
+	    }
+	    .task-index{
+    	    position: absolute;
+		    left: -21px;
+		    height: 40px;
+		    width: 39px;
+		    background: #7c67ed;
+		    top: 25%;
+		    text-align: center;
+		    line-height: 2.5;
+		    color: #fff;
+		    box-shadow: 0 -1px 11px 1px #dbdbdb;
+	    }
+	    .task-content{
+	    	margin-left: 20px;
+	    }
+	    .assigned-title{
+	    	color: #746e6e;
+	    	margin-right: 5px;
+	    	margin-left: 5px;
+	    }
+	    .task-actions{
+	    	text-align: center;
+	    	.task-action{
+	    		height: 30px;
+			    width: 30px;
+			    background: #ede5e5;
+			    border-radius: 50%;
+			    text-align: center;
+			    border: 1px solid #cccbcb;
+			    line-height: 1.9;
+			    display: inline-block;
+	    	}
+	    	a.delete-task{
+	    		color: #eb1707;
+	    	}
+	    }
+	}
+
+}

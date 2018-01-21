@@ -1,0 +1,20 @@
+%nav.navbar.navbar-expand-lg.navbar-light.navbar-custom
+  %button.navbar-toggler{"aria-controls" => "navbarsExample09", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarsExample09", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarsExample09.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item.active
+        %a.nav-link{:href => "#"}
+          %i.icon-home
+          Home
+          %span.sr-only (current)
+      %li.nav-item
+        %a.nav-link{:href => "#"} 
+          %i.icon-list
+          Tasks
+      %li.nav-item
+        %a.nav-link{:href => "#"} 
+          %i.icon-people
+          Users
+  %button.btn.btn-outline-success.my-2.my-sm-0.m-r-10.btn-sm{"data-toggle": "modal", "data-target": "#newUserModal"} Add New User
+  %button.btn.btn-outline-danger.my-2.my-sm-0.btn-sm Assign a Task
