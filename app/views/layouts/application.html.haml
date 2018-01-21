@@ -6,7 +6,7 @@
     %title Tasker
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', params[:controller], 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %link{:href => "https://fonts.googleapis.com/css?family=Source+Sans+Pro", :rel => "stylesheet"}
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat", :rel => "stylesheet"}
     %link{:href => "https://fonts.googleapis.com/css?family=Muli", :rel => "stylesheet"}
@@ -14,7 +14,7 @@
     .main-header
       .container-fluid
         %h3 
-          Tasker | 
+          Tasker
           %span Realtime Task Manager
         .main-right.pull-right
           %i.icon-bell

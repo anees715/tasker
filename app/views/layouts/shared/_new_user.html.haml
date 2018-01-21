@@ -1,8 +1,10 @@
-%form
+%form#new-user-form
   .form-group
     %label{:for => "exampleInputEmail1"} Email address
     %input#exampleInputEmail1.form-control{"aria-describedby" => "emailHelp", :placeholder => "Enter email", :type => "email"}
   .form-group
     %label{:for => "exampleInputPassword1"} Password
     %input#exampleInputPassword1.form-control{:placeholder => "Password", :type => "password"}
+    %input{type: "hidden", name: "authenticity_token", value:"#{form_authenticity_token}" }
+
   %button.btn.btn-primary{:type => "submit"} Add User
